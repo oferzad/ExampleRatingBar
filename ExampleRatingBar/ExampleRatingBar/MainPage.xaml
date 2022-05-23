@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rating="clr-namespace:Rating;assembly=Rating"
+             x:Class="ExampleRatingBar.MainPage">
+
+    <StackLayout>
+        <rating:RatingBar x:Name="rating" 
+                          HorizontalOptions="Center" 
+                          ImageWidth="30" ImageHeight="30" 
+                          FlowDirection="LeftToRight" 
+                          EmptyStarImage="ic_star.png" 
+                          FillStarImage="ic_star_orange.png" 
+                          SelectedStarValue="{Binding RatingValue}">
+            
+        </rating:RatingBar>
+    </StackLayout>
+
+</ContentPage>
